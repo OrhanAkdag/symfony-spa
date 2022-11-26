@@ -15,4 +15,11 @@ class SpaController extends AbstractController
             'controller_name' => 'SpaController',
         ]);
     }
+
+    #[Route('/features', name: 'app_spa_features')]
+    public function features(): Response
+    {
+        return $this->render('spa/features.html.twig', [
+        ]);
+    }
 }
